@@ -1,0 +1,63 @@
+//output:index.html
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='author' content='Luis Gaytan')
+    meta(name='description' content='Add Content Here')
+    
+    title Title | Description
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+    link(href="https://fonts.googleapis.com/css?family=Questrial|Seaweed+Script" rel="stylesheet")
+    link(rel='stylesheet' href='./styles/styles.min.css')
+  body
+    .container-fluid#all-site-wrapper
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container-fluid
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-navbar-collapse', aria-expanded='false')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            //- a.navbar-brand(href='#') Casa De Soria
+          // Collect the nav links, forms, and other content for toggling
+          #main-navbar-collapse.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href='#') About Us
+              li
+                a(href='#') Menu
+              li
+                a(href='#') Contact Us
+      .header
+        .header-text
+          h1 Casa De Soria
+            hr
+          h3 Authentic Mexican Food Since 1958
+      .main-content
+        .inner-wrapper#main
+          a#cta(href="#")
+            div
+              h2.text-uppercase.text-center Meet the Family
+              hr
+              p We have served over seven million meals to Mexican food lovers in Ventura, California. We are proud of our long-standing reputation for serving quality, authentic style Mexican food to generations of local families at great prices.
+              p.text-uppercase.text-center(style="color: red") Learn More
+        .inner-wrapper#food
+          .row
+            .col-sm-12
+              h2.text-uppercase.text-center The Food
+              hr
+          .row.text-center
+            .col-sm-6
+              h3 Specialties
+              a(href="#") Our Menu
+            .col-sm-6
+              h3 Foods
+              a(href="#") Our Menu
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+    script(src="./scripts/scripts.js")

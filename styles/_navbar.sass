@@ -1,0 +1,35 @@
+/* main: styles.sass*/
+@import "variables"
+.navbar-default
+  background-color: transparent
+  border: none
+  font-family: $main-font
+  text-transform: uppercase
+  font-size: $bigger-text
+  margin: 1.2em 0 0 0
+  @include wrap
+  // a.navbar-brand
+  //   color: white
+  //   font-size: 2.5em
+  //   font-family: $brand-font
+  //   text-transform: none
+  //   &:hover
+  //     color: white
+  //     text-shadow: 1px 1px 1px black
+  //     transform: scale(1.1)
+  //     transition: all .25s ease
+  .navbar-nav>li>a
+    color: white
+    &:hover, &:focus
+      color: white
+      text-shadow: 1px 1px 1px black
+      transform: scale(1.2)
+      border-bottom: 1px solid red
+      transition: all .25s ease
+    transition: all .15s ease
+// Center Nav
+.navbar .navbar-nav
+  display: inline-block
+  float: none
+.navbar .navbar-collapse
+  text-align: center
