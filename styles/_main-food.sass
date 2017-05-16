@@ -4,3 +4,27 @@
   @include paddings
   hr
     @include horizon
+  #food-items
+    .food-item
+      position: relative
+      .img-responsive
+        @include center-item
+        border: 1px solid gray
+      a
+        position: absolute
+        top: 35%
+        left: 50%
+        transform: translateX(-50%)
+        text-decoration: none
+        font-family: $main-font
+        color: white
+        text-shadow: 1px 1px 1px black
+        &:hover
+          text-shadow: 2px 10px 5px black
+          transition: all .25s ease
+        transition: all .5s ease
+        opacity: 0
+        h3
+          line-height: 1.75em
+          .small
+            color: #f11515

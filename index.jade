@@ -47,17 +47,73 @@ html(lang="en")
               p We have served over seven million meals to Mexican food lovers in Ventura, California. We are proud of our long-standing reputation for serving quality, authentic style Mexican food to generations of local families at great prices.
               p.text-uppercase.text-center(style="color: red") Learn More
         .inner-wrapper#food
-          .row
+          .row#food-section
             .col-sm-12
               h2.text-uppercase.text-center The Food
               hr
-          .row.text-center
-            .col-sm-6
-              h3 Specialties
-              a(href="#") Our Menu
-            .col-sm-6
-              h3 Foods
-              a(href="#") Our Menu
+          .row.text-center#food-items
+            .col-xs-6.food-item
+              img.img-responsive(src="./assets/images/fajitas.jpg" alt="Delicious Fajitas")
+              a(href="#") 
+                h3 Platos Especiales
+                  hr
+                  .small Menu
+            .col-xs-6.food-item
+              img.img-responsive(src="./assets/images/mole.jpg" alt="Delicious Mole")
+              a(href="#") 
+                h3 Platos Principales
+                  hr
+                  .small Menu
+      .secondary-content
+        .row
+          .col-sm-12.text-center#title-bottom
+            h2.text-uppercase Come Join Us
+            hr
+            h3 @CasaSoria
+        .row#our-people
+          .col-xs-4.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/burrito_guac.jpg", alt="Burrito w/ Guacamole")
+          .col-xs-4.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/nachos.jpg", alt="Yummy Nachos")
+          .col-xs-4.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/taco_tuesday.jpg", alt="Taco Tuesday")
+          .col-xs-4.hidden-xs.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/shrimp_ceviche.jpg", alt="Shrimp Ceviche")
+        .row#our-people-2
+          .col-xs-4.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/mateos_burrito.jpg", alt="Mateo's Burrito")
+          .col-xs-4.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/tequila_tuesday.jpg", alt="Tequila Tuesday")
+          .col-xs-4.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/guac_chips.jpg", alt="Guac & Chips")
+          .col-xs-4.hidden-xs.col-sm-3
+            a(href="")
+              img.img-responsive(src="./assets/images/margaritas.jpg", alt="Yummy Margaritas")
+        .footer.row
+            .col-xs-4
+              h5 Locations
+              p Ventura
+                br
+                |1961 E. Thompson Blvd.
+                |Ventura,  CA  93001
+                |805.648.2083
+              p Canoga Park
+                br
+                |21911 Roscoe Blvd.
+                |Canoga Park, CA  91304
+                |818.963.8961
+            .col-xs-4
+              h5 Opening Hours
+              p Monday - Sunday 11am to 9pm
+            .col-xs-4
+              h5 Connect
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
     script(src="./scripts/scripts.js")

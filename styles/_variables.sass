@@ -12,11 +12,20 @@ $brand-font: 'Seaweed Script', cursive
 @mixin paddings
   padding-top: 5.75em
   padding-bottom: 3em
+@mixin paddings-small
+  padding-top: 3.25em
+  padding-bottom: 3em
 @mixin center-item
   margin: 0 auto
 @mixin horizon
-  width: 3em
+  width: 2.25em
   border-bottom: 3px solid $red
   border-top: none
 // Colors
 $red: rgb(241, 21, 21)
+$black: #222222
+// Variables
+.color-menu
+  background: linear-gradient(to top, rgba(194, 21, 0, 0.5), rgba(255, 197, 0, 0.7))
+  transition: all .25s ease
+  border-bottom: 1px solid black

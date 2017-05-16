@@ -2,8 +2,11 @@
 @import "variables"
 @import "cta-main"
 @import "main-food"
+@import "our-people"
 
 body
+  h2
+    font-size: 275%
   #all-site-wrapper
     margin: 0 auto
     padding: 0
@@ -53,5 +56,16 @@ body
           repeat: no-repeat
           size: cover
         &:hover
-          background-image: linear-gradient(rgba(52, 52, 52, 0.7) 100%, transparent), url('../assets/images/casa_soria.jpg')
+          background-image: linear-gradient(rgba(3, 2, 2, 0.7) 100%, transparent), url('../assets/images/casa_soria.jpg')
           transition: all .15s ease
+    .secondary-content
+      background-color: $black
+      font-family: $main-font
+      color: white
+      hr
+        @include horizon
+      #title-bottom
+        @include paddings
+      .footer
+        @include paddings-small
+        @include wrap
