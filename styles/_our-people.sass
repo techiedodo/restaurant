@@ -1,10 +1,14 @@
 /* main: styles.sass*/
 @import "variables"
+.row
+  margin: 0
 #our-people, #our-people-2
   .col-xs-4.col-sm-3
     padding: 0
+    overflow: hidden
   img
-    max-height: 300px
-    width: 100%
+    max-width: 100%
+    &:hover
+      opacity: .45
 #our-people-2
   border-bottom: 3px solid $red
