@@ -23,6 +23,13 @@ body
         attachment: fixed
         repeat: no-repeat
         size: cover
+      @include mobile-screen
+        background:
+          image: url('../assets/images/background-img-sm.jpg')
+          position: center
+          attachment: fixed
+          repeat: no-repeat
+          size: cover
       .header-text
         @include wrap
         h1, h3
