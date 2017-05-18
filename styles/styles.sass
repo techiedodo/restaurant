@@ -23,13 +23,6 @@ body
         attachment: fixed
         repeat: no-repeat
         size: cover
-      @include mobile-screen
-        background:
-          image: url('../assets/images/background-img-sm.jpg')
-          position: center
-          attachment: fixed
-          repeat: no-repeat
-          size: cover
       .header-text
         @include wrap
         h1, h3
@@ -46,6 +39,13 @@ body
           font-family: $main-font
         hr
           width: 30vw
+      @include mobile-screen
+        background:
+          image: url('../assets/images/background-img-sm.jpg')
+          position: center
+          attachment: scroll
+          repeat: no-repeat
+          size: cover
     .main-content
       @include wrap
       @include paddings
