@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="./styles/styles.min.css">
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : 124948048073750,
+          xfbml      : true,
+          version    : 'v2.9'
+        });
+        FB.AppEvents.logPageView();
+      };
+      
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0]; 
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id; 
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=124948048073750";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      
+    </script>
     <div id="all-site-wrapper" class="container-fluid">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -104,6 +124,7 @@
           </div>
           <div class="col-xs-4">
             <h4>Connect</h4>
+            <div data-href="https://www.facebook.com/casadesoriamexicanrestaurant" data-layout="button_count" data-size="large" data-show-faces="true" class="fb-follow"></div>
           </div>
         </div>
       </div>

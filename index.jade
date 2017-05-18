@@ -13,6 +13,25 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css?family=Questrial|Seaweed+Script" rel="stylesheet")
     link(rel='stylesheet' href='./styles/styles.min.css')
   body
+    #fb-root
+    script.
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : 124948048073750,
+          xfbml      : true,
+          version    : 'v2.9'
+        });
+        FB.AppEvents.logPageView();
+      };
+    
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0]; 
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id; 
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=124948048073750";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    
     .container-fluid#all-site-wrapper
       nav.navbar.navbar-default.navbar-fixed-top
         .container-fluid
@@ -114,6 +133,9 @@ html(lang="en")
               p Monday - Sunday 11am to 9pm
             .col-xs-4
               h4 Connect
+              .fb-follow(data-href='https://www.facebook.com/casadesoriamexicanrestaurant', data-layout='button_count', data-size='large', data-show-faces='true')
+
+              
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
     script(src="./scripts/scripts.js")
