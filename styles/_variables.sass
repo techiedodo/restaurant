@@ -21,6 +21,9 @@ $brand-font: 'Seaweed Script', cursive
   width: 2.25em
   border-bottom: 3px solid $red
   border-top: none
+@mixin mobile-screen()
+  @media only screen and (max-width: 600px)
+    @content
 // Colors
 $red: rgb(241, 21, 21)
 $black: #222222
