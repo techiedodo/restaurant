@@ -46,6 +46,9 @@ body
           attachment: scroll
           repeat: no-repeat
           size: cover
+        .header-text
+          h1
+            font-size: 350%
     .main-content
       @include wrap
       @include paddings
@@ -81,3 +84,16 @@ body
         // .fb_iframe_widget iframe
         //   width: 300px !important
         //   height: 150px !important
+  @include mobile
+    h2
+      font-size: 175%
+    h3
+      font-size: 120%
+    #cta div
+      top: 3em
+      p
+        font-size: 90%
+    #food #food-items .food-item a
+      top: 10%
+      h3
+        line-height: initial
